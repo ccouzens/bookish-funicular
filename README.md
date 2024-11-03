@@ -34,7 +34,9 @@ cases output the same HTML component.
 
 ## Prior Art
 
-[mitosis](https://mitosis.builder.io/) has fairly similar goals, but there are
+### Mitosis
+
+[Mitosis](https://mitosis.builder.io/) has fairly similar goals, but there are
 differences.
 
 > Mitosis is an open-source tool that transforms JSX components into fully
@@ -53,6 +55,10 @@ on templates, that transform props to HTML or DOM. Interactivity will be
 available to the developer by wrapping the output component with an outer
 component that controls the props; as interactivity is a client side concern
 this does not need sharing with the server.
+
+### Moustache
+
+https://mustache.github.io/
 
 ## Open Questions
 
