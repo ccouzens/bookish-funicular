@@ -53,3 +53,13 @@ on templates, that transform props to HTML or DOM. Interactivity will be
 available to the developer by wrapping the output component with an outer
 component that controls the props; as interactivity is a client side concern
 this does not need sharing with the server.
+
+## Open Questions
+
+What does the source syntax look like?
+
+How will the CSS associated with an HTML component be attached? Assuming we give
+options, what options do we give?
+
+How well does writing a website using this tooling work? Are there other things
+that are duplicated, and how costly is the duplication?
