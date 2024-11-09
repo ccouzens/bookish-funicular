@@ -7,12 +7,13 @@ HTML components refers to HTML snippets that are reused within a given website
 to produce a consistent look and feel and for the purpose of code reuse. HTML
 components are often the code version of a UI component in a tool like Figma.
 Components may be small like a button. Components can contain other components,
-and may therefore be large such as an entire page.
+and may therefore be large such as an entire page. Components are usually a
+function over a collection of data, or "props".
 
 Modern websites often need the HTML components to work on the client. This may
 be to add interactivity to the page, or to show new content that wasn't in the
 original HTML such as a dialog. Javascript is the programming lanaguage of the
-client side web, which necessitates HTML components needing to be rendered with
+client side web, which necessitates HTML components needing to be useable with
 Javascript. Usually a higher level Javascript framework is used such as React or
 Lit.
 
@@ -56,9 +57,29 @@ available to the developer by wrapping the output component with an outer
 component that controls the props; as interactivity is a client side concern
 this does not need sharing with the server.
 
-### Moustache
+### Mustache
 
 https://mustache.github.io/
+
+> Logic-less templates
+
+Mustache is intersting as it has acheived many of my goals. It was once very
+popular. It is important that I understand why it is no longer popular so I
+don't fall for the same mistakes.
+
+Mustache is rarely used as a building block for design systems. In examples I've
+seen, mustache templates don't concern themselves with styling, which may be the
+reason for this.
+
+Mustache templates can contain conditional expressions and loops, but are
+limited beyond the basic. I am unsure how limiting this is for components- the
+initial release of my project will not support advanced transformations. I will
+need to see if there any any existing solutions that can compile simple scripts
+into a range of different languages.
+
+The typical implementation of Mustache is to write interpreters for various
+different programming languages. I have not seen generators, which are currently
+my favoured solution.
 
 ## Open Questions
 
