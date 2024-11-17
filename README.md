@@ -152,3 +152,20 @@ the source types in Rust.
 
 JSON being a data serialization format doesn't support function references or
 references to other components.
+
+## First Slice of Value
+
+Styling is very important to components, and in some cases is basically all the
+component is. I could make something that allows us to take a collection of
+style properties and return a class name or class names. This would be
+configurable to various approaches:
+
+- Wether to group the collection of CSS properties to a single class, whether to
+  have a 1-to-1 mapping of class names to CSS properties or some combination in
+  the middle.
+- Support inlining just used CSS, referencing just used CSS or having one large
+  external style sheet.
+- Support restricting referenced variables to a predefined list.
+- Support inlining certain variables.
+
+This is likely to be needed to support full components.
